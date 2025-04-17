@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Text Extractor | TXT File</title>
+		<link rel="stylesheet" href="../src/style.css" />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined"
+		/>
+		<script src="../src/js/text.js" defer></script>
+	</head>
+	<body
+		class="flex flex-col items-center justify-center min-h-screen bg-black text-white overflow-hidden"
+	>
+		<nav
+			class="absolute flex items-center justify-center top-0 w-full text-xl text-white font-bold bg-teal-600 p-6"
+		>
+			PeekTXT
+		</nav>
+		<p class="text-center text-white text-2xl font-bold mb-5 sm:mb-16">
+			Extract from text File
+		</p>
+		<span
+			class="material-symbols-outlined !text-3xl absolute top-5 left-5 cursor-pointer !hidden"
+			id="backBtn"
+			>arrow_back</span
+		>
+		<div
+			class="container relative flex flex-col items-center justify-center h-full sm:w-3/4 px-4 sm:px-8"
+		>
+			<div
+				class="loader w-full h-full absolute top-0 bg-black hidden items-center justify-center z-10"
+				id="loader"
+			>
+				<div
+					class="loading border-4 border-teal-600 border-t-black w-10 h-10 rounded-full animate-spin"
+				></div>
+			</div>
+			<input
+				class="hidden"
+				type="file"
+				name="userFile"
+				id="userFile"
+				accept=".txt"
+			/>
+			<label
+				class="w-full max-w-lg mx-auto text-lg font-semibold flex flex-col items-center justify-center text-center p-6 border-2 border-sky-400 border-dashed rounded-lg cursor-pointer h-96 bg-gray-900 hover:bg-gray-700 transition"
+				for="userFile"
+				id="userSelect"
+			>
+				<span class="material-symbols-outlined mx-3 block !text-4xl">
+					upload_file
+				</span>
+				Click to Upload file or Drag & Drop
+			</label>
+			<p class="text-sm my-4 text-sky-300" id="fileName"></p>
+			<p
+				class="hidden font-medium w-full sm:w-1/2 overflow-y-scroll !h-96 no-scrollbar border-2 border-sky-600 rounded-lg py-4 px-6"
+				id="displayText"
+			></p>
+			<button
+				class="bg-sky-600 border-0 outline-none py-3 px-4 mt-5 rounded-md text-lg font-normal items-center justify-center hidden"
+				id="copyBtn"
+			>
+				<span class="material-symbols-outlined mx-1"> content_copy </span>
+				<span id="copyStatus">Copy Text</span>
+			</button>
+		</div>
+	</body>
+</html>

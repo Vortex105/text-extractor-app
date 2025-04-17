@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Text Extractor</title>
+		<link rel="stylesheet" href="../src/style.css" />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined"
+		/>
+	</head>
+	<body
+		class="flex flex-col items-center min-h-screen bg-black text-white py-20"
+	>
+		<nav
+			class="absolute flex items-center justify-center top-0 w-full text-xl font-bold bg-teal-600 p-6"
+		>
+			PeekTXT
+		</nav>
+		<p class="text-center text-white text-2xl italic">
+			Extract text from your files with ease
+		</p>
+		<main class="px-4 my-16 sm:w-1/2 grid grid-cols-2 gap-3">
+			<a
+				href="pdf.html"
+				class="pdf flex flex-col items-center no-underline px-1 py-1 border-2 border-red-600 rounded-xl text-center"
+			>
+				<span
+					class="material-symbols-outlined !text-3xl sm:!text-5xl m-2 leading-none inline-block text-red-600"
+					>picture_as_pdf</span
+				>
+				<p class="font-semibold text-lg">Extract from PDF</p>
+				<span class="italic">Unlock PDF text</span>
+			</a>
+			<a
+				href="text.html"
+				class="text flex flex-col items-center no-underline px-1 py-1 border-2 border-sky-400 rounded-xl text-center"
+			>
+				<span
+					class="material-symbols-outlined !text-3xl sm:!text-5xl m-2 text-sky-400"
+					>text_snippet</span
+				>
+				<p class="font-semibold text-lg">Extract from TXT File</p>
+				<span class="italic">Plain text, No fuss</span>
+			</a>
+			<a
+				href="word.html"
+				class="word flex flex-col items-center no-underline px-1 py-1 border-2 border-blue-600 rounded-xl text-center"
+			>
+				<span
+					class="material-symbols-outlined !text-3xl sm:!text-5xl m-2 text-blue-600"
+					>docs</span
+				>
+				<p class="font-semibold text-lg">Extract from Word</p>
+				<span class="italic">Word Docs, Decoded</span>
+			</a>
+			<a
+				href="image.html"
+				class="image flex flex-col items-center no-underline px-1 py-1 border-2 border-white rounded-xl text-center"
+			>
+				<span
+					class="material-symbols-outlined !text-3xl sm:!text-5xl m-2 text-white"
+					>image</span
+				>
+				<p class="font-semibold text-lg">Image OCR</p>
+				<span class="italic">Scan text from images</span>
+			</a>
+		</main>
+	</body>
+</html>
